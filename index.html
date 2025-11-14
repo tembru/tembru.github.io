@@ -43,7 +43,7 @@
     </p>
 
     <button class="vision-link" type="button">
-      read the vision
+      vision
     </button>
   </main>
 
@@ -63,42 +63,25 @@
            alt=""
            aria-hidden="true" />
 
-      <h2 class="overlay-title">Tembru's vision</h2>
+      <h2 class="overlay-title">TEMBRU VISION</h2>
 
       <div class="overlay-body">
-        <p><strong>Tembru exists to give people a simple way to feel like themselves again.</strong></p>
+        <p><strong>One breath.</strong></p>
+        <p><strong>One rhythm.</strong></p>
+        <p><strong>One minute. To return to yourself.</strong></p>
 
         <p>
-          In a world that moves fast, pulls us in every direction, and fills our minds with noise,
-          Tembru offers a moment of clarity anyone can access. With one minute of guided breath,
-          rhythm, and stillness, Tembru helps people reconnect with their nervous system and return
-          to a state of calm, focus, and presence.
-        </p>
-
-        <p>We imagine a world where:</p>
-        <ul>
-          <li>taking care of your inner state is as natural as taking a breath,</li>
-          <li>everyone has a quick way to steady themselves in stressful moments,</li>
-          <li>children, teens, and adults grow up knowing how to reset instead of shutting down,</li>
-          <li>communities, workplaces, and families use the same simple ritual to reconnect,</li>
-          <li>and millions of people feel more grounded, more aware, and more themselves every day.</li>
-        </ul>
-
-        <p>
-          Tembru is not about doing more.
-          It's about <strong>being more here</strong> — in your body, in your mind, in your life.
+          We imagine a world where clarity is normal.<br>
+          Where people can reset in seconds, not spirals.<br>
+          Where being present is the baseline, not the exception.
         </p>
 
         <p>
-          One minute at a time, we are building a world where clarity is accessible,
-          stress doesn't control us, and people can show up as who they truly are.
+          Tembru is not about doing more.<br>
+          It's about <strong>being more here</strong> — in your body, your breath, your moment.
         </p>
 
-        <p>
-          <strong>Tembru's vision is simple:</strong>
-          a global ritual that helps humanity feel calm, clear, and connected —
-          anywhere, anytime, in one minute.
-        </p>
+        <p>One minute at a time.</p>
       </div>
     </div>
   </section>
@@ -141,11 +124,10 @@
       });
     }
 
-    // click on background/main also opens, but only if overlay is closed
+    // click on main area also opens, but only if overlay is closed
     const mainWrap = document.querySelector('.wrap');
     if (mainWrap) {
       mainWrap.addEventListener('click', (e) => {
-        // avoid double-trigger when clicking the button
         if (e.target.closest('.vision-link')) return;
         if (overlay.classList.contains('overlay--open')) return;
         openOverlay();
