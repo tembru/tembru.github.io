@@ -96,14 +96,16 @@ body.overlay-active{
 /* whisper-style vision link */
 .vision-link{
   display:inline-block;
-  border:none;
+  width:auto;              /* don't stretch */
+  max-width:none;
   background:transparent;
+  border:none;
   color:var(--muted);
   font-size:clamp(13px, 1.4vw, 15px);
   letter-spacing:.14em;
   text-transform:uppercase;
-  padding:.15em .4em;   /* smaller hitbox */
-  border-radius:999px;  /* still a pill, but tiny */
+  padding:.15em .4em;      /* small hitbox */
+  border-radius:999px;
   cursor:pointer;
   margin-top:.35em;
   transition:background .15s ease, color .15s ease, transform .12s ease;
