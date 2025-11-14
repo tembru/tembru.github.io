@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tembru</title>
+  <meta name="description" content="tembru (v.) — a one-minute reset that brings you back to yourself." />
+  <link rel="canonical" href="https://tembru.com/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="tembru" />
+  <meta property="og:description" content="tembru (v.) — a one-minute reset that brings you back to yourself." />
+  <meta property="og:url" content="https://tembru.com/" />
+  <meta property="og:image" content="/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="wrap" role="main">
+    <h1 class="wordmark">tembru <span class="pos">(v.)</span></h1>
+    <p class="definition">a one-minute reset that brings you back to yourself</p>
+    <p class="pronounce" aria-label="pronounced tem-broo">/tem-broo/</p>
+
+    <a class="cta" href="mailto:eric@tembru.com?subject=Tembru%20—%20keep%20me%20posted">get updates</a>
+  </main>
+
+  <footer class="foot">© <span id="y"></span> Tembru</footer>
+
+  <script>
+    // Year stamp + motion preference hook
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced) document.body.classList.add('motion-ok');
+  </script>
+</body>
+</html>
